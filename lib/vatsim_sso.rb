@@ -13,7 +13,7 @@ module VatsimSso
         :oauth_callback => callback_url
     )
     h = JSON.parse(request_token.params.keys.first.to_s)
-    'http://sso.hardern.net/server/auth/pre_login/?oauth_token=' + h['token']['oauth_token']
+    site + '/auth/pre_login/?oauth_token=' + h['token']['oauth_token']
   end
 
   # use it after sso callback, provides the user hash
