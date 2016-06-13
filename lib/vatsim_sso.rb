@@ -1,4 +1,3 @@
-require "vatsim-sso/version"
 require 'oauth'
 require 'json'
 
